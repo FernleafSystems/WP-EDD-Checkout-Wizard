@@ -1,18 +1,35 @@
 <?php
 /**
- * Plugin Name:     EDD Checkout Wizard
- * Plugin URI:      https://wordpress.org/plugins/edd-checkout-wizard/
+ * Plugin Name:     FS EDD Checkout Wizard
+ * Plugin URI:      https://github.com/FernleafSystems/WP-EDD-Checkout-Wizard
  * Description:     Adds a form wizard with validation to your checkout page
- * Version:         1.0.2
- * Author:          Tsunoa
- * Author URI:      https://tsunoa.com
- * Text Domain:     edd-checkout-wizard
- *
- * @package         EDD\Checkout_Wizard
- * @author          Tsunoa
- * @copyright       Copyright (c) Tsunoa
+ * Version:         0.0.1
+ * Author:          FernleafSystems
+ * Author URI:      https://onedollarplugin.com
+ * Text Domain:     icwp-edd-checkout-wizard
  */
 
+/**
+ * Copyright (c) 2018 FernleafSystems <support@onedollarplugin.com>
+ * All rights reserved.
+ *
+ * "FS EDD Checkout Wizard" is distributed under the GNU
+ * General Public License, Version 2, June 1991. Copyright (C) 1989, 1991 Free
+ * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110, USA
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * Credit to original plugin author: https://wordpress.org/plugins/edd-checkout-wizard/
+ */
 
 // Exit if accessed directly
 if( !defined( 'ABSPATH' ) ) exit;
@@ -38,7 +55,7 @@ if( !class_exists( 'EDD_Checkout_Wizard' ) ) {
          *
          * @access      public
          * @since       1.0.0
-         * @return      object self::$instance The one true EDD_Checkout_Wizard
+         * @return      EDD_Checkout_Wizard self::$instance The one true EDD_Checkout_Wizard
          */
         public static function instance() {
             if( !self::$instance ) {
