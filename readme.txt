@@ -1,10 +1,10 @@
 === EDD Checkout Wizard ===
-Contributors: tsunoa, rubengc
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=64N6CERD8LPZN
-Tags: easy digital downloads, digital, download, downloads, edd, tsunoa, rubengc, checkout, wizard, step, form, validation, validate, e-commerce
+Contributors: onedollarplugin, paultgoodchild
+Donate link: http://icwp.io/q
+Tags: easy digital downloads, digital, download, downloads, edd, checkout, wizard, step, form, validation, validate, e-commerce
 Requires at least: 4.0
 Tested up to: 4.8
-Stable tag: 1.0.2
+Stable tag: 0.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -87,20 +87,9 @@ Note: Elements that are not in a tab will be kept always visible
 
 == Screenshots ==
 
-1. Screenshot from checkout (Theme: vendd)
-
-1. Screenshot of form notifications (Theme: vendd)
-
 == Upgrade Notice ==
 
 == Changelog ==
 
-= 1.0.2 =
-* Support for credit card fields
-* Improved show payment method conditional
-
-= 1.0.1 =
-* Fixed: Prevent duplicated HTML tabs When EDD recalculates taxes
-
-= 1.0 =
-* Initial release
+= 0.0.1 =
+* Initial release - as a fork [from original](https://wordpress.org/plugins/edd-checkout-wizard/)
