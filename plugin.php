@@ -203,7 +203,7 @@ if( !class_exists( 'EDD_Checkout_Wizard' ) ) {
                     'label' => __( 'Billing Address' ),
                     'selectors' => array(
                         '#edd_cc_address',
-                        '#edd_vat_info_show', // Support for EDD VAT
+                        '#edd_vat_info_show' // Support for EDD VAT
                     )
                 ),
                 'payment' => array(
@@ -265,7 +265,8 @@ if( !class_exists( 'EDD_Checkout_Wizard' ) ) {
                     class="edd-checkout-wizard-button <?php echo $style; ?> <?php echo $color; ?>"
                     aria-hidden="true"
                 >
-                    <span class="edd-checkout-wizard-button-label"><?php echo __( 'Previous' ); ?></span>
+                    <span class="edd-checkout-wizard-button-label">
+						&larr; <?php echo __( 'Previous Step' ); ?></span>
                 </button>
                 <button
                     type="button"
@@ -273,7 +274,9 @@ if( !class_exists( 'EDD_Checkout_Wizard' ) ) {
                     class="edd-checkout-wizard-button <?php echo $style; ?> <?php echo $color; ?>"
                     aria-hidden="true"
                 >
-                    <span class="edd-checkout-wizard-button-label"><?php echo __( 'Next' ); ?></span>
+                    <span class="edd-checkout-wizard-button-label">
+						<?php echo __( 'Next Step' ); ?> &rarr;
+					</span>
                 </button>
             </div>
             <?php
