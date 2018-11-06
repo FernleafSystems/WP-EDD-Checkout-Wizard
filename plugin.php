@@ -63,7 +63,9 @@ if( !class_exists( 'EDD_Checkout_Wizard' ) ) {
                 self::$instance->setup_constants();
                 self::$instance->includes();
                 self::$instance->load_textdomain();
-                self::$instance->hooks();
+				add_action( 'init', function () {
+					self::$instance->hooks();
+				} );
             }
 
             return self::$instance;
